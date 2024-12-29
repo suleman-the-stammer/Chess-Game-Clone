@@ -22,7 +22,8 @@ app.get('/' , function(req, res){
 })
 
 io.on("connection" , function(uniqueSocket){
-    console.log("Connected ha bhai")
+    console.log("Connected ha bhai");
+    
   
     if (!players.white) {
         players.white = uniqueSocket.id;
